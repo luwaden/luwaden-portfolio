@@ -48,7 +48,7 @@ function ExperienceCard({ experience, index }: { experience: typeof experiences[
     <ScrollReveal delay={index * 0.1} direction="up">
       <motion.div
         whileHover={{ y: -8, scale: 1.02 }}
-        className="group relative overflow-hidden bg-white/5 backdrop-blur-sm border border-white/10 hover:border-accent/50 rounded-2xl p-6 transition-all duration-300"
+        className="group relative overflow-hidden bg-zinc-100/80 dark:bg-white/5 backdrop-blur-sm border border-zinc-300 dark:border-white/10 hover:border-accent/50 rounded-2xl p-6 transition-all duration-300"
       >
         {/* Gradient overlay */}
         <div className={`absolute inset-0 bg-gradient-to-br ${experience.color} opacity-0 group-hover:opacity-10 transition-opacity duration-300`} />
@@ -68,10 +68,10 @@ function ExperienceCard({ experience, index }: { experience: typeof experiences[
           </div>
           
           <div className="space-y-2">
-            <h3 className="text-xl font-heading font-bold text-white group-hover:text-accent transition-colors">
+            <h3 className="text-xl font-heading font-bold text-black dark:text-white group-hover:text-accent transition-colors">
               {experience.title}
             </h3>
-            <p className="text-sm text-zinc-400 group-hover:text-zinc-300 transition-colors leading-relaxed">
+            <p className="text-sm text-zinc-600 dark:text-zinc-400 group-hover:text-zinc-500 dark:group-hover:text-zinc-300 transition-colors leading-relaxed">
               {experience.description}
             </p>
           </div>
@@ -96,7 +96,7 @@ export default function ExperienceGrid() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-white mb-3">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-black dark:text-white mb-3">
               My Diverse Background
             </h2>
             <div className="h-1 w-24 bg-gradient-to-r from-accent to-accent/70 rounded-full mx-auto" />

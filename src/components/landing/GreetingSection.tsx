@@ -30,10 +30,10 @@ export default function GreetingSection({ onComplete }: GreetingSectionProps) {
           speed={40}
           onComplete={handleComplete}
           enableSound={true}
-          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-heading font-bold text-white px-4 leading-tight"
+          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-heading font-bold text-black dark:text-white px-4 leading-tight"
         />
       ) : (
-        <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-heading font-bold text-white px-4 leading-tight">
+        <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-heading font-bold text-black dark:text-white px-4 leading-tight">
           {text}
         </p>
       )}

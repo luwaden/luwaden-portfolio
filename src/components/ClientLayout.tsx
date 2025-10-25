@@ -16,7 +16,7 @@ export default function ClientLayout({ children }: ClientLayoutProps) {
   return (
     <>
       <CursorFollower />
-      <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white transition-colors duration-500">
+      <div className="min-h-screen transition-colors duration-300">
         <AnimatePresence mode="wait">
           <motion.div
             key={pathname}

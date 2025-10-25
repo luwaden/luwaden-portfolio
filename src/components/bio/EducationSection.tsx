@@ -62,7 +62,7 @@ function EducationCard({ education, index }: { education: typeof educationData[0
           {/* Content */}
           <div className="flex-1 space-y-4">
             <div>
-              <h3 className="text-2xl sm:text-3xl font-heading font-bold text-white mb-2">
+              <h3 className="text-2xl sm:text-3xl font-heading font-bold text-black dark:text-white mb-2">
                 {education.institution}
               </h3>
               <p className="text-lg text-accent font-medium">
@@ -74,15 +74,15 @@ function EducationCard({ education, index }: { education: typeof educationData[0
               {education.badges.map((badge, badgeIndex) => {
                 const BadgeIcon = badge.icon;
                 return (
-                  <div key={badgeIndex} className="flex items-center gap-2 px-4 py-2 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg">
+                  <div key={badgeIndex} className="flex items-center gap-2 px-4 py-2 bg-zinc-100/80 dark:bg-white/5 backdrop-blur-sm border border-zinc-300 dark:border-white/10 rounded-lg">
                     <BadgeIcon className="w-5 h-5 text-accent" />
-                    <span className="text-sm text-zinc-300">{badge.text}</span>
+                    <span className="text-sm text-zinc-700 dark:text-zinc-300">{badge.text}</span>
                   </div>
                 );
               })}
             </div>
 
-            <p className="text-zinc-400 leading-relaxed">
+            <p className="text-zinc-600 dark:text-zinc-400 leading-relaxed">
               {education.description}
             </p>
           </div>
@@ -105,7 +105,7 @@ export default function EducationSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-white mb-3">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-black dark:text-white mb-3">
             Education
           </h2>
           <div className="h-1 w-24 bg-gradient-to-r from-accent to-accent/70 rounded-full mx-auto" />

@@ -28,10 +28,10 @@ export default function QuestionSection({ onComplete }: QuestionSectionProps) {
           speed={45}
           onComplete={handleComplete}
           enableSound={true}
-          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-heading font-semibold text-white"
+          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-heading font-semibold text-black dark:text-white"
         />
       ) : (
-        <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-heading font-semibold text-white">
+        <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-heading font-semibold text-black dark:text-white">
           {text}
         </p>
       )}

@@ -33,10 +33,10 @@ export default function TaglineSection({ onComplete }: TaglineSectionProps) {
             speed={35}
             onComplete={handleComplete}
             enableSound={true}
-            className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-zinc-300 font-normal leading-relaxed max-w-4xl"
+            className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-zinc-700 dark:text-zinc-300 font-normal leading-relaxed max-w-4xl"
           />
         ) : (
-          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-zinc-300 font-normal leading-relaxed max-w-4xl">
+          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-zinc-700 dark:text-zinc-300 font-normal leading-relaxed max-w-4xl">
             {text}
           </p>
         )}

@@ -113,7 +113,7 @@ export default function ProfileHeader({ showImage = true }: ProfileHeaderProps) 
                 speed={40}
                 onComplete={handleWelcomeComplete}
                 enableSound={true}
-                className="text-xl sm:text-2xl md:text-3xl font-heading font-semibold text-zinc-300 leading-relaxed"
+                className="text-xl sm:text-2xl md:text-3xl font-heading font-semibold text-zinc-700 dark:text-zinc-300 leading-relaxed"
               />
             </div>
 
@@ -130,7 +130,7 @@ export default function ProfileHeader({ showImage = true }: ProfileHeaderProps) 
                   speed={35}
                   onComplete={handleIntroComplete}
                   enableSound={true}
-                  className="text-lg sm:text-xl md:text-2xl text-zinc-400 leading-relaxed"
+                  className="text-lg sm:text-xl md:text-2xl text-zinc-600 dark:text-zinc-400 leading-relaxed"
                 />
               </motion.div>
             )}
@@ -158,11 +158,11 @@ export default function ProfileHeader({ showImage = true }: ProfileHeaderProps) 
                   />
                   
                   {/* Badge content */}
-                  <div className="relative px-6 py-4 bg-white/5 backdrop-blur-sm border border-accent/30 rounded-2xl">
+                  <div className="relative px-6 py-4 bg-zinc-100/80 dark:bg-white/5 backdrop-blur-sm border border-zinc-300 dark:border-accent/30 rounded-2xl">
                     <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-3">
                       <div className="flex items-center gap-2">
                         <div className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-                        <span className="text-sm font-medium text-zinc-400">
+                        <span className="text-sm font-medium text-zinc-600 dark:text-zinc-400">
                           Available for Projects
                         </span>
                       </div>

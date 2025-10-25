@@ -50,11 +50,11 @@ export default function NavigationButtons() {
             href={button.href}
             whileHover={{ scale: 1.05, y: -8 }}
             whileTap={{ scale: 0.98 }}
-            className="group relative flex flex-col h-full overflow-hidden bg-white/5 backdrop-blur-sm border border-white/10 hover:border-accent/50 rounded-2xl p-6 sm:p-8 transition-all duration-300"
+            className="group relative flex flex-col h-full overflow-hidden bg-zinc-100/80 dark:bg-white/5 backdrop-blur-sm border border-zinc-300 dark:border-white/10 hover:border-accent/50 rounded-2xl p-6 sm:p-8 transition-all duration-300"
           >
             {/* Hover gradient overlay */}
             <motion.div className="absolute inset-0 bg-gradient-to-br from-accent/10 via-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-            
+
             {/* Glow effect on hover */}
             <motion.div
               className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
@@ -70,16 +70,16 @@ export default function NavigationButtons() {
               >
                 <div className="text-accent">{button.icon}</div>
               </motion.div>
-              
+
               <div className="flex-1 min-w-0">
-                <h3 className="text-base sm:text-lg font-heading font-bold text-white mb-1 group-hover:text-accent transition-colors duration-300">
+                <h3 className="text-base sm:text-lg font-heading font-bold text-black dark:text-white mb-1 group-hover:text-accent transition-colors duration-300">
                   {button.label}
                 </h3>
-                <p className="text-sm text-zinc-400 group-hover:text-zinc-300 transition-colors duration-300">
+                <p className="text-sm text-zinc-600 dark:text-zinc-400 group-hover:text-zinc-500 dark:group-hover:text-zinc-300 transition-colors duration-300">
                   {button.subtitle}
                 </p>
               </div>
-              
+
               {/* Animated arrow */}
               <motion.div
                 animate={{ x: [0, 5, 0] }}

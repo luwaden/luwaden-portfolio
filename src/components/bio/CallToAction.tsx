@@ -12,7 +12,7 @@ export default function CallToAction() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <p className="text-2xl sm:text-3xl md:text-4xl font-heading font-semibold text-zinc-300 mb-8">
+          <p className="text-2xl sm:text-3xl md:text-4xl font-heading font-semibold text-zinc-700 dark:text-zinc-300 mb-8">
             Curious to see how my journey translates into{' '}
             <span className="text-accent">impact</span>?
           </p>

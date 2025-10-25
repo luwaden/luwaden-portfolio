@@ -35,7 +35,7 @@ export default function LandingPage() {
   };
 
   return (
-    <div className="min-h-screen relative overflow-hidden bg-black">
+    <div className="min-h-screen relative overflow-hidden bg-white dark:bg-black">
       <AnimatedBackground />
 
       {/* Main content with parallax */}

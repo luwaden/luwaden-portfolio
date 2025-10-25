@@ -1,59 +1,55 @@
 'use client';
+import { createContext, useContext, useEffect, useState, ReactNode } from 'react';
 
-import React, { createContext, useContext, useState, useEffect } from 'react';
-
-type Theme = 'dark' | 'light';
+type Theme = 'light' | 'dark';
 
 interface ThemeContextType {
   theme: Theme;
-  setTheme: (theme: Theme) => void;
   toggleTheme: () => void;
 }
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
-export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [theme, setThemeState] = useState<Theme>('dark');
+export function ThemeProvider({ children }: { children: ReactNode }) {
+  const [theme, setTheme] = useState<Theme>('dark'); // Default to dark
   const [mounted, setMounted] = useState(false);
 
-  // Initial load - get theme from localStorage
+  // Initialize theme on mount
   useEffect(() => {
+    const savedTheme = localStorage.getItem('theme') as Theme | null;
+    if (savedTheme) {
+      setTheme(savedTheme);
+      document.documentElement.classList.toggle('dark', savedTheme === 'dark');
+    } else {
+      // Default to dark
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+    }
     setMounted(true);
-    const savedTheme = (localStorage.getItem('portfolio-theme') as Theme) || 'dark';
-    setThemeState(savedTheme);
-    applyTheme(savedTheme);
   }, []);
 
-  // Apply theme to document
-  const applyTheme = (newTheme: Theme) => {
+  // Update DOM when theme changes
+  useEffect(() => {
+    if (!mounted) return;
+
     const root = document.documentElement;
-    if (newTheme === 'dark') {
+    
+    if (theme === 'dark') {
       root.classList.add('dark');
-      root.classList.remove('light');
     } else {
-      root.classList.add('light');
       root.classList.remove('dark');
     }
-  };
-
-  const setTheme = (newTheme: Theme) => {
-    setThemeState(newTheme);
-    localStorage.setItem('portfolio-theme', newTheme);
-    applyTheme(newTheme);
-  };
+    
+    localStorage.setItem('theme', theme);
+  }, [theme, mounted]);
 
   const toggleTheme = () => {
-    const newTheme = theme === 'dark' ? 'light' : 'dark';
-    setTheme(newTheme);
+    setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'));
   };
 
-  // Prevent flash of unstyled content
-  if (!mounted) {
-    return null;
-  }
-
+  // Always provide the context, even before mounted
   return (
-    <ThemeContext.Provider value={{ theme, setTheme, toggleTheme }}>
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
       {children}
     </ThemeContext.Provider>
   );

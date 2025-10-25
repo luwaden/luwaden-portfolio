@@ -10,7 +10,7 @@ import BioAnimatedBackground from '@/components/bio/BioAnimatedBackground';
 
 export default function BioPage() {
   return (
-    <div className="min-h-screen relative overflow-hidden bg-black">
+    <div className="min-h-screen relative overflow-hidden bg-white dark:bg-black">
       <BioAnimatedBackground />
 
       {/* Main content */}
