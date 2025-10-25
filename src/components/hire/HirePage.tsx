@@ -71,12 +71,10 @@ export default function HirePage() {
         {/* Header */}
         <ScrollReveal>
           <div className="text-center space-y-4 sm:space-y-6 mb-12 sm:mb-16">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-black dark:text-white">
-              Let's Work Together
-            </h1>
-            <p className="text-lg sm:text-xl md:text-2xl text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
-              If you'd like to hire me, kindly send me an email or chat me up on WhatsApp
-            </p>
+           <h1 className="text-3xl ...">Let&apos;s Work Together</h1>
+
+           <p className="text-lg ...">If you&apos;d like to hire me, kindly send me an email or chat me up on WhatsApp</p>
+
           </div>
         </ScrollReveal>
 

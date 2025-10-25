@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 import GreetingSection from '@/components/landing/GreetingSection';
 import TaglineSection from '@/components/landing/TaglineSection';
 import QuestionSection from '@/components/landing/QuestionSection';
@@ -9,7 +9,7 @@ import NavigationButtons from '@/components/landing/NavigationButtons';
 import AnimatedBackground from '@/components/landing/AnimatedBackground';
 
 export default function LandingPage() {
-  const [showGreeting, setShowGreeting] = useState(true);
+  const [showGreeting, ] = useState(true);
   const [showTagline, setShowTagline] = useState(false);
   const [showQuestion, setShowQuestion] = useState(false);
   const [showButtons, setShowButtons] = useState(false);
