@@ -1,10 +1,11 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Home, User, Briefcase, Mail, BookOpen, Sun, Moon } from 'lucide-react';
 import { useTheme } from '@/context/ThemeContext';
+import { useEffect, useState } from 'react';
 
 const navItems = [
   { href: '/', icon: Home, label: 'Home' },
@@ -17,20 +18,28 @@ const navItems = [
 function FloatingNav() {
   const pathname = usePathname();
   const { theme, toggleTheme } = useTheme();
+  const { scrollYProgress } = useScroll();
+
+  // Smoothly map scroll progress (0 → 1) to downward translation (0px → 60px)
+  const y = useTransform(scrollYProgress, [0, 1], [0, 60]);
+
+  // Optional: fade slightly as you scroll deeper
+  const opacity = useTransform(scrollYProgress, [0, 1], [1, 0.9]);
 
   return (
     <motion.nav
+      style={{ y, opacity }}
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ delay: 0.5, type: 'spring', stiffness: 260, damping: 20 }}
-      className="fixed bottom-6 left-1/2 -translate-x-1/2 z-40"
+      className="fixed bottom-2 left-1/2 -translate-x-1/2 z-40"
     >
       <div className="bg-white/90 dark:bg-zinc-900/90 backdrop-blur-lg border border-zinc-200 dark:border-zinc-800 rounded-full px-4 py-3 shadow-2xl">
         <div className="flex items-center gap-2">
           {navItems.map((item) => {
             const isActive = pathname === item.href;
             const Icon = item.icon;
-            
+
             return (
               <Link key={item.href} href={item.href}>
                 <motion.div
@@ -55,9 +64,9 @@ function FloatingNav() {
               </Link>
             );
           })}
-          
+
           <div className="w-px h-6 bg-zinc-300 dark:bg-zinc-700 mx-2" />
-          
+
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}

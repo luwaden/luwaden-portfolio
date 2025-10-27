@@ -30,7 +30,7 @@ export default function CursorFollower() {
       style={{
         x: cursorXSpring,
         y: cursorYSpring,
-        backgroundColor: '#00FF88',
+        backgroundColor: '#0097b2',
       }}
     >
       <div className="absolute inset-0 rounded-full bg-accent animate-ping opacity-75" />

@@ -29,7 +29,8 @@ export default function NavigationButtons() {
     },
   ];
 
-  const delays = [0, 0.5, 1, 1.5];
+  // Each button appears 1s apart
+  const delays = [0, 1, 2, 3];
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 max-w-4xl mx-auto px-4 items-stretch auto-rows-fr">
@@ -39,10 +40,9 @@ export default function NavigationButtons() {
           initial={{ opacity: 0, y: 30, scale: 0.9 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{
-            type: 'spring',
-            stiffness: 200,
-            damping: 20,
-            delay: delays[index],
+            duration: 1, // make each fade-in take 1 second
+            delay: delays[index], // each button waits 1s more than the last
+            ease: 'easeOut',
           }}
           className="h-full"
         >
@@ -62,7 +62,6 @@ export default function NavigationButtons() {
             />
 
             <div className="relative flex items-center gap-4 flex-1">
-              {/* Icon with rotation on hover */}
               <motion.div
                 whileHover={{ rotate: 360 }}
                 transition={{ duration: 0.6 }}
@@ -80,7 +79,6 @@ export default function NavigationButtons() {
                 </p>
               </div>
 
-              {/* Animated arrow */}
               <motion.div
                 animate={{ x: [0, 5, 0] }}
                 transition={{ duration: 1.5, repeat: Infinity }}
@@ -90,7 +88,6 @@ export default function NavigationButtons() {
               </motion.div>
             </div>
 
-            {/* Bottom accent line */}
             <motion.div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-accent to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
           </motion.a>
         </motion.div>
