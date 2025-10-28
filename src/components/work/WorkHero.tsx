@@ -62,7 +62,7 @@ export default function WorkHero() {
               
               {/* Image */}
               <Image
-                src="https://res.cloudinary.com/dergk96ic/image/upload/v1760616756/Day_2_w-Ron_Mike-150_vigpaf.jpg"
+                src="https://res.cloudinary.com/dergk96ic/image/upload/v1761659212/Untitled_design_1_mvgixj.png"
                 alt="Ayodeji Dennis Oluwatunla at work"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
