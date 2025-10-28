@@ -43,7 +43,7 @@ export default function GreetingSection({ onComplete }: GreetingSectionProps) {
         } transition-all duration-700 flex-shrink-0`}
       >
         <img
-          src="https://res.cloudinary.com/dergk96ic/image/upload/v1761569094/57e1c4d9-903b-4e1b-892a-e9ba5676da67_1_hz45cc.png"
+          src="https://res.cloudinary.com/dergk96ic/image/upload/v1761650699/Gemini_Generated_Image_8go2748go2748go2_iel77r.png"
           alt="Profile"
           className="w-full h-full object-cover rounded-full border-4 border-gray-200 dark:border-gray-700 shadow-lg"
         />

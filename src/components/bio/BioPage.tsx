@@ -1,17 +1,20 @@
 'use client';
 
 import ScrollReveal from '@/components/ScrollReveal';
-import ProfileHeader from '@/components/profileHeader/ProfileHeader';
+
 import AboutSection from '@/components/bio/AboutSection';
 import ExperienceGrid from '@/components/bio/ExperienceGrid';
 import EducationSection from '@/components/bio/EducationSection';
 import CallToAction from '@/components/bio/CallToAction';
 import BioAnimatedBackground from '@/components/bio/BioAnimatedBackground';
+import ProfileHeader from './profileHeader/ProfileHeader';
+import AnimatedBackground from '../landing/AnimatedBackground';
 
 export default function BioPage() {
   return (
     <div className="min-h-screen relative overflow-hidden bg-white dark:bg-black">
-      <BioAnimatedBackground />
+      
+         <AnimatedBackground />
 
       {/* Main content */}
       <div className="relative py-16 sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8">
