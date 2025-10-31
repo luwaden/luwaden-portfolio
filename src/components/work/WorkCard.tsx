@@ -50,17 +50,17 @@ export default function WorkCard({
       className="relative group"
     >
       <div
-        className="relative overflow-hidden bg-white dark:bg-zinc-900 border-2 border-zinc-200 dark:border-zinc-800 hover:border-[#00FF88] dark:hover:border-[#00FF88] rounded-2xl sm:rounded-3xl p-6 sm:p-8 transition-all duration-300 hover:shadow-2xl hover:shadow-[#00FF88]/20 cursor-pointer"
+        className="relative overflow-hidden bg-white dark:bg-zinc-900 border-2 border-zinc-200 dark:border-zinc-800 hover:border-[#3B82F6] dark:hover:border-[#3B82F6] rounded-2xl sm:rounded-3xl p-6 sm:p-8 transition-all duration-300 hover:shadow-2xl hover:shadow-[#3B82F6]/20 cursor-pointer"
         onClick={() => setExpanded(!expanded)}
       >
         {/* Animated gradient background */}
         <motion.div
           animate={{
             background: [
-              'radial-gradient(circle at 20% 50%, rgba(0, 255, 136, 0.08) 0%, transparent 50%)',
-              'radial-gradient(circle at 80% 50%, rgba(0, 255, 136, 0.08) 0%, transparent 50%)',
-              'radial-gradient(circle at 50% 80%, rgba(0, 255, 136, 0.08) 0%, transparent 50%)',
-              'radial-gradient(circle at 20% 50%, rgba(0, 255, 136, 0.08) 0%, transparent 50%)',
+              'radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.08) 0%, transparent 50%)',
+              'radial-gradient(circle at 80% 50%, rgba(59, 130, 246, 0.08) 0%, transparent 50%)',
+              'radial-gradient(circle at 50% 80%, rgba(59, 130, 246, 0.08) 0%, transparent 50%)',
+              'radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.08) 0%, transparent 50%)',
             ],
           }}
           transition={{ duration: 8, repeat: Infinity, ease: 'linear' }}
@@ -71,7 +71,7 @@ export default function WorkCard({
           {/* Header with Icon, Title and Image */}
           <div className="flex items-start justify-between mb-6 gap-4">
             <div className="flex items-center gap-4 flex-1 min-w-0">
-              <div className="p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-[#00FF88] text-white shadow-lg flex-shrink-0">
+              <div className="p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-[#3B82F6] text-white shadow-lg flex-shrink-0">
                 <Icon className="w-6 h-6 sm:w-8 sm:h-8" />
               </div>
               <div className="min-w-0 flex-1">
@@ -87,7 +87,7 @@ export default function WorkCard({
             <motion.div
               animate={{ rotate: expanded ? 180 : 0 }}
               transition={{ duration: 0.3 }}
-              className="text-[#00FF88] flex-shrink-0"
+              className="text-[#3B82F6] flex-shrink-0"
             >
               <ChevronDown className="w-6 h-6" />
             </motion.div>
@@ -130,7 +130,7 @@ export default function WorkCard({
                   {/* Project Details */}
                   <div className="flex-1 min-w-0">
                     <div className="flex items-start justify-between mb-2 gap-3">
-                      <h4 className="text-base sm:text-lg font-bold text-black dark:text-white group-hover/project:text-[#00FF88] transition-colors">
+                      <h4 className="text-base sm:text-lg font-bold text-black dark:text-white group-hover/project:text-[#3B82F6] transition-colors">
                         {project.name}
                       </h4>
                       <div className="flex gap-2 flex-shrink-0">
@@ -139,7 +139,7 @@ export default function WorkCard({
                             href={project.certificateUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="p-2 rounded-lg bg-[#00FF88] hover:bg-[#00D4AA] text-black transition-colors"
+                            className="p-2 rounded-lg bg-[#3B82F6] hover:bg-[#2563EB] text-black transition-colors"
                             onClick={(e) => e.stopPropagation()}
                           >
                             <Award className="w-4 h-4" />
@@ -150,7 +150,7 @@ export default function WorkCard({
                             href={project.liveUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="p-2 rounded-lg bg-[#00FF88] hover:bg-[#00D4AA] text-black transition-colors"
+                            className="p-2 rounded-lg bg-[#3B82F6] hover:bg-[#2563EB] text-black transition-colors"
                             onClick={(e) => e.stopPropagation()}
                           >
                             <ExternalLink className="w-4 h-4" />

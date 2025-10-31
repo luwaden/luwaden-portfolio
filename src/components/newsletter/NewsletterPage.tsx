@@ -30,11 +30,11 @@ export default function NewsletterPage() {
         <motion.div
           animate={{
             background: [
-              'radial-gradient(circle at 0% 0%, rgba(0, 255, 136, 0.1) 0%, transparent 50%)',
-              'radial-gradient(circle at 100% 100%, rgba(0, 255, 136, 0.1) 0%, transparent 50%)',
-              'radial-gradient(circle at 100% 0%, rgba(0, 255, 136, 0.1) 0%, transparent 50%)',
-              'radial-gradient(circle at 0% 100%, rgba(0, 255, 136, 0.1) 0%, transparent 50%)',
-              'radial-gradient(circle at 0% 0%, rgba(0, 255, 136, 0.1) 0%, transparent 50%)',
+              'radial-gradient(circle at 0% 0%, rgba(59, 130, 246, 0.1) 0%, transparent 50%)',
+              'radial-gradient(circle at 100% 100%, rgba(59, 130, 246, 0.1) 0%, transparent 50%)',
+              'radial-gradient(circle at 100% 0%, rgba(59, 130, 246, 0.1) 0%, transparent 50%)',
+              'radial-gradient(circle at 0% 100%, rgba(59, 130, 246, 0.1) 0%, transparent 50%)',
+              'radial-gradient(circle at 0% 0%, rgba(59, 130, 246, 0.1) 0%, transparent 50%)',
             ],
           }}
           transition={{

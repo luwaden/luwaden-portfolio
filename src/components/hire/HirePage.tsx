@@ -1,15 +1,15 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Mail, MessageSquare, Linkedin, Github, Twitter } from 'lucide-react';
+import { Mail, MessageSquare, LinkedinIcon, GitCommit, Twitter } from 'lucide-react';
 import ScrollReveal from '@/components/ScrollReveal';
 
 const contactMethods = [
   {
     icon: Mail,
     label: 'Send Email',
-    value: 'your.email@example.com',
-    href: 'mailto:your.email@example.com',
+    value: 'oluwatunlaayodeji@gmail.com',
+    href: 'mailto:oluwatunlaayodeji@gmail.com',
     gradient: 'from-accent to-emerald-600',
     primary: true,
   },
@@ -17,7 +17,7 @@ const contactMethods = [
     icon: MessageSquare,
     label: 'Chat on WhatsApp',
     value: '+234 XXX XXX XXXX',
-    href: 'https://wa.me/234XXXXXXXXXX',
+    href: 'https://wa.me/2348163283020',
     gradient: 'from-green-500 to-emerald-600',
     primary: true,
   },
@@ -25,13 +25,13 @@ const contactMethods = [
 
 const socialLinks = [
   {
-    icon: Linkedin,
+    icon: LinkedinIcon,
     label: 'LinkedIn',
     href: 'https://linkedin.com/in/yourprofile',
     color: 'hover:text-blue-500',
   },
   {
-    icon: Github,
+    icon: GitCommit,
     label: 'GitHub',
     href: 'https://github.com/yourusername',
     color: 'hover:text-purple-500',
@@ -52,10 +52,10 @@ export default function HirePage() {
         <motion.div
           animate={{
             background: [
-              'radial-gradient(circle at 20% 50%, rgba(0, 255, 136, 0.15) 0%, transparent 50%)',
-              'radial-gradient(circle at 80% 50%, rgba(0, 255, 136, 0.15) 0%, transparent 50%)',
-              'radial-gradient(circle at 50% 80%, rgba(0, 255, 136, 0.15) 0%, transparent 50%)',
-              'radial-gradient(circle at 20% 50%, rgba(0, 255, 136, 0.15) 0%, transparent 50%)',
+              'radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.15) 0%, transparent 50%)',
+              'radial-gradient(circle at 80% 50%, rgba(59, 130, 246, 0.15) 0%, transparent 50%)',
+              'radial-gradient(circle at 50% 80%, rgba(59, 130, 246, 0.15) 0%, transparent 50%)',
+              'radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.15) 0%, transparent 50%)',
             ],
           }}
           transition={{

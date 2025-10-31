@@ -7,7 +7,7 @@ export default function AboutSection() {
   const [isTypingComplete, setIsTypingComplete] = useState(false);
 
   return (
-    <ScrollReveal delay={0.2}>
+    <ScrollReveal delay={0.1}>
       <div className="max-w-4xl mx-auto space-y-8">
         <div className="text-center mb-12">
           <motion.div

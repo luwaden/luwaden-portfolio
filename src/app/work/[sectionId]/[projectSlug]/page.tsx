@@ -28,7 +28,7 @@ export default function ProjectDetailPage() {
           </h1>
           <button
             onClick={() => router.push('/work')}
-            className="text-[#00FF88] hover:underline"
+            className="text-[#3B82F6] hover:underline"
           >
             ← Back to Work
           </button>
@@ -48,7 +48,7 @@ export default function ProjectDetailPage() {
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           onClick={() => router.push('/work')}
-          className="flex items-center gap-2 text-[#00FF88] hover:text-[#00D4AA] mb-8 sm:mb-12 transition-colors group"
+          className="flex items-center gap-2 text-[#3B82F6] hover:text-[#2563EB] mb-8 sm:mb-12 transition-colors group"
         >
           <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform" />
           <span className="font-medium">Back to Work</span>
@@ -64,7 +64,7 @@ export default function ProjectDetailPage() {
           >
             {/* Category Badge */}
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-3 rounded-xl bg-[#00FF88] text-white">
+              <div className="p-3 rounded-xl bg-[#3B82F6] text-white">
                 <Icon className="w-5 h-5" />
               </div>
               <span className="text-sm font-medium text-zinc-600 dark:text-zinc-400">
@@ -87,19 +87,19 @@ export default function ProjectDetailPage() {
               <div className="space-y-3 mb-8">
                 {project.issueDate && (
                   <div className="flex items-center gap-2 text-sm text-zinc-600 dark:text-zinc-400">
-                    <Calendar className="w-4 h-4 text-[#00FF88]" />
+                    <Calendar className="w-4 h-4 text-[#3B82F6]" />
                     <span>Issued: {project.issueDate}</span>
                   </div>
                 )}
                 {project.expiryDate && (
                   <div className="flex items-center gap-2 text-sm text-zinc-600 dark:text-zinc-400">
-                    <Calendar className="w-4 h-4 text-[#00FF88]" />
+                    <Calendar className="w-4 h-4 text-[#3B82F6]" />
                     <span>Expires: {project.expiryDate}</span>
                   </div>
                 )}
                 {project.credentialId && (
                   <div className="flex items-center gap-2 text-sm text-zinc-600 dark:text-zinc-400">
-                    <Award className="w-4 h-4 text-[#00FF88]" />
+                    <Award className="w-4 h-4 text-[#3B82F6]" />
                     <span>Credential ID: {project.credentialId}</span>
                   </div>
                 )}
@@ -113,7 +113,7 @@ export default function ProjectDetailPage() {
                   href={project.certificateUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 px-6 py-3 bg-[#00FF88] hover:bg-[#00D4AA] text-black rounded-xl font-medium transition-colors"
+                  className="flex items-center gap-2 px-6 py-3 bg-[#3B82F6] hover:bg-[#2563EB] text-black rounded-xl font-medium transition-colors"
                 >
                   <Award className="w-4 h-4" />
                   View Certificate
@@ -124,7 +124,7 @@ export default function ProjectDetailPage() {
                   href={project.liveUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 px-6 py-3 bg-[#00FF88] hover:bg-[#00D4AA] text-black rounded-xl font-medium transition-colors"
+                  className="flex items-center gap-2 px-6 py-3 bg-[#3B82F6] hover:bg-[#2563EB] text-black rounded-xl font-medium transition-colors"
                 >
                   <ExternalLink className="w-4 h-4" />
                   View Live Project
@@ -151,7 +151,7 @@ export default function ProjectDetailPage() {
             transition={{ delay: 0.2 }}
             className="relative rounded-2xl overflow-hidden h-64 sm:h-80 md:h-96 shadow-2xl group"
           >
-            <div className="absolute inset-0 bg-gradient-to-br from-[#00FF88]/40 to-[#00D4AA]/40 mix-blend-multiply z-10 group-hover:opacity-75 transition-opacity duration-300" />
+            <div className="absolute inset-0 bg-gradient-to-br from-[#3B82F6]/40 to-[#2563EB]/40 mix-blend-multiply z-10 group-hover:opacity-75 transition-opacity duration-300" />
             <Image
               src={project.image}
               alt={project.name}
@@ -174,10 +174,10 @@ export default function ProjectDetailPage() {
           <motion.div
             animate={{
               background: [
-                'radial-gradient(circle at 20% 50%, rgba(0, 255, 136, 0.08) 0%, transparent 50%)',
-                'radial-gradient(circle at 80% 50%, rgba(0, 255, 136, 0.08) 0%, transparent 50%)',
-                'radial-gradient(circle at 50% 80%, rgba(0, 255, 136, 0.08) 0%, transparent 50%)',
-                'radial-gradient(circle at 20% 50%, rgba(0, 255, 136, 0.08) 0%, transparent 50%)',
+                'radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.08) 0%, transparent 50%)',
+                'radial-gradient(circle at 80% 50%, rgba(59, 130, 246, 0.08) 0%, transparent 50%)',
+                'radial-gradient(circle at 50% 80%, rgba(59, 130, 246, 0.08) 0%, transparent 50%)',
+                'radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.08) 0%, transparent 50%)',
               ],
             }}
             transition={{ duration: 8, repeat: Infinity, ease: 'linear' }}
@@ -188,7 +188,7 @@ export default function ProjectDetailPage() {
             {/* Technologies Section */}
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <Tag className="w-5 h-5 text-[#00FF88]" />
+                <Tag className="w-5 h-5 text-[#3B82F6]" />
                 <h2 className="text-2xl font-bold text-black dark:text-white">
                   Technologies Used
                 </h2>
@@ -200,7 +200,7 @@ export default function ProjectDetailPage() {
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: 0.4 + index * 0.05 }}
-                    className="px-4 py-2 bg-zinc-100 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-full text-sm font-medium text-zinc-700 dark:text-zinc-300 hover:border-[#00FF88] hover:text-[#00FF88] transition-colors"
+                    className="px-4 py-2 bg-zinc-100 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-full text-sm font-medium text-zinc-700 dark:text-zinc-300 hover:border-[#3B82F6] hover:text-[#3B82F6] transition-colors"
                   >
                     {tag}
                   </motion.span>
@@ -212,7 +212,7 @@ export default function ProjectDetailPage() {
             {!isCertification && project.details.problem !== 'N/A' && (
               <div>
                 <div className="flex items-center gap-2 mb-4">
-                  <AlertCircle className="w-5 h-5 text-[#00FF88]" />
+                  <AlertCircle className="w-5 h-5 text-[#3B82F6]" />
                   <h2 className="text-2xl font-bold text-black dark:text-white">
                     The Problem
                   </h2>
@@ -227,7 +227,7 @@ export default function ProjectDetailPage() {
             {!isCertification && project.details.features.length > 0 && (
               <div>
                 <div className="flex items-center gap-2 mb-4">
-                  <CheckCircle2 className="w-5 h-5 text-[#00FF88]" />
+                  <CheckCircle2 className="w-5 h-5 text-[#3B82F6]" />
                   <h2 className="text-2xl font-bold text-black dark:text-white">
                     Key Features
                   </h2>
@@ -241,7 +241,7 @@ export default function ProjectDetailPage() {
                       transition={{ delay: 0.5 + index * 0.1 }}
                       className="flex items-start gap-3 text-zinc-600 dark:text-zinc-400"
                     >
-                      <CheckCircle2 className="w-5 h-5 text-[#00FF88] flex-shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-5 h-5 text-[#3B82F6] flex-shrink-0 mt-0.5" />
                       <span>{feature}</span>
                     </motion.li>
                   ))}
@@ -253,7 +253,7 @@ export default function ProjectDetailPage() {
             {!isCertification && project.details.challenges.length > 0 && (
               <div>
                 <div className="flex items-center gap-2 mb-4">
-                  <Target className="w-5 h-5 text-[#00FF88]" />
+                  <Target className="w-5 h-5 text-[#3B82F6]" />
                   <h2 className="text-2xl font-bold text-black dark:text-white">
                     Technical Challenges Overcome
                   </h2>
@@ -267,7 +267,7 @@ export default function ProjectDetailPage() {
                       transition={{ delay: 0.6 + index * 0.1 }}
                       className="flex items-start gap-3 text-zinc-600 dark:text-zinc-400"
                     >
-                      <div className="w-2 h-2 bg-[#00FF88] rounded-full flex-shrink-0 mt-2" />
+                      <div className="w-2 h-2 bg-[#3B82F6] rounded-full flex-shrink-0 mt-2" />
                       <span>{challenge}</span>
                     </motion.li>
                   ))}
@@ -278,7 +278,7 @@ export default function ProjectDetailPage() {
             {/* My Role */}
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <Icon className="w-5 h-5 text-[#00FF88]" />
+                <Icon className="w-5 h-5 text-[#3B82F6]" />
                 <h2 className="text-2xl font-bold text-black dark:text-white">
                   {isCertification ? 'Skills Acquired' : 'My Role & Contributions'}
                 </h2>
@@ -291,7 +291,7 @@ export default function ProjectDetailPage() {
             {/* Results & Impact */}
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <TrendingUp className="w-5 h-5 text-[#00FF88]" />
+                <TrendingUp className="w-5 h-5 text-[#3B82F6]" />
                 <h2 className="text-2xl font-bold text-black dark:text-white">
                   Results & Impact
                 </h2>
@@ -340,7 +340,7 @@ export default function ProjectDetailPage() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.5 + index * 0.1 }}
                     onClick={() => router.push(`/work/${sectionId}/${relatedProject.slug}`)}
-                    className="bg-white dark:bg-zinc-900 border-2 border-zinc-200 dark:border-zinc-800 hover:border-[#00FF88] rounded-2xl overflow-hidden cursor-pointer transition-all hover:shadow-lg group"
+                    className="bg-white dark:bg-zinc-900 border-2 border-zinc-200 dark:border-zinc-800 hover:border-[#3B82F6] rounded-2xl overflow-hidden cursor-pointer transition-all hover:shadow-lg group"
                   >
                     {/* Project Image */}
                     <div className="relative h-40 overflow-hidden">
@@ -355,7 +355,7 @@ export default function ProjectDetailPage() {
 
                     {/* Project Info */}
                     <div className="p-4">
-                      <h3 className="text-lg font-bold text-black dark:text-white mb-2 group-hover:text-[#00FF88] transition-colors line-clamp-1">
+                      <h3 className="text-lg font-bold text-black dark:text-white mb-2 group-hover:text-[#3B82F6] transition-colors line-clamp-1">
                         {relatedProject.name}
                       </h3>
                       <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-3 line-clamp-2">
