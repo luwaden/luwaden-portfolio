@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Mail, MessageSquare, LinkedinIcon, GitCommit, Twitter } from 'lucide-react';
+import { Mail, MessageSquare, LinkedinIcon, GitCommit, XIcon } from 'lucide-react';
 import ScrollReveal from '@/components/ScrollReveal';
 
 const contactMethods = [
@@ -16,7 +16,7 @@ const contactMethods = [
   {
     icon: MessageSquare,
     label: 'Chat on WhatsApp',
-    value: '+234 XXX XXX XXXX',
+    value: '+234 816 328 3020',
     href: 'https://wa.me/2348163283020',
     gradient: 'from-green-500 to-emerald-600',
     primary: true,
@@ -27,19 +27,19 @@ const socialLinks = [
   {
     icon: LinkedinIcon,
     label: 'LinkedIn',
-    href: 'https://linkedin.com/in/yourprofile',
+    href: 'https://www.linkedin.com/in/ayodeji-dennis-oluwatunla/',
     color: 'hover:text-blue-500',
   },
   {
     icon: GitCommit,
     label: 'GitHub',
-    href: 'https://github.com/yourusername',
+    href: 'https://github.com/luwaden',
     color: 'hover:text-purple-500',
   },
   {
-    icon: Twitter,
-    label: 'Twitter',
-    href: 'https://twitter.com/yourhandle',
+    icon: XIcon,
+    label: 'X',
+    href: 'https://twitter.com/luwaden1',
     color: 'hover:text-sky-500',
   },
 ];

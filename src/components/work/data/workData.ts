@@ -2,95 +2,145 @@ import { Code, Palette, FlaskConical, GraduationCap, Award } from 'lucide-react'
 import { WorkSection } from '../types/work';
 
 export const workSections: WorkSection[] = [
-  {
-    id: 'software',
-    title: 'Software Development',
-    icon: Code,
-    description: 'Building scalable web applications and digital products',
-    image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800',
-    projects: [
-      {
-        name: 'EduTech Platform',
-        slug: 'edutech-platform',
-        description: 'A comprehensive learning management system built with Next.js and Supabase',
-        image: 'https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800',
-        tags: ['Next.js', 'TypeScript', 'Supabase', 'TailwindCSS'],
-        liveUrl: '#',
-        githubUrl: '#',
-        details: {
-          problem: 'Traditional learning management systems were complex, expensive, and difficult to integrate with modern tools. Educational institutions needed an affordable, user-friendly platform that could scale with their needs.',
-          features: [
-            'Real-time collaborative learning spaces with video integration',
-            'AI-powered progress tracking and personalized learning paths',
-            'Interactive assessments with instant feedback',
-            'Mobile-first responsive design for learning on-the-go',
-            'Integration with popular education tools and APIs'
-          ],
-          challenges: [
-            'Implementing real-time synchronization across thousands of concurrent users',
-            'Optimizing video streaming performance for low-bandwidth connections',
-            'Building a flexible permission system for different user roles',
-            'Ensuring WCAG 2.1 AA accessibility compliance'
-          ],
-          role: 'Lead Full-Stack Developer - Architected the entire platform from scratch, led a team of 3 developers, implemented core features including the real-time collaboration system, and deployed the application to production serving 10,000+ active users.',
-          impact: 'Successfully onboarded 50+ educational institutions within the first 6 months, improved student engagement by 40%, and reduced administrative workload by 60%. The platform now serves over 10,000 active users across Nigeria.'
-        }
-      },
-      {
-        name: 'Startup Dashboard',
-        slug: 'startup-dashboard',
-        description: 'Analytics and management dashboard for early-stage startups',
-        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800',
-        tags: ['React', 'Node.js', 'MongoDB', 'Express'],
-        liveUrl: '#',
-        githubUrl: '#',
-        details: {
-          problem: 'Early-stage startups struggle to track metrics, manage teams, and visualize growth data without expensive enterprise tools. They needed an affordable, all-in-one solution.',
-          features: [
-            'Real-time analytics dashboard with customizable widgets',
-            'Team collaboration tools with task management',
-            'Financial tracking and runway calculations',
-            'Integration with popular tools (Stripe, Slack, Google Workspace)',
-            'Automated reporting and data visualization'
-          ],
-          challenges: [
-            'Handling large volumes of time-series data efficiently',
-            'Creating a flexible widget system that could be customized per user',
-            'Implementing secure authentication with multiple OAuth providers',
-            'Optimizing database queries for complex aggregations'
-          ],
-          role: 'Full-Stack Developer - Built the entire backend API, designed the database schema, implemented real-time data processing, and created reusable React components for the dashboard interface.',
-          impact: 'Helped 25+ startups gain better visibility into their metrics, resulting in data-driven decision making. Reduced time spent on reporting by 70% and increased team productivity by 35%.'
-        }
-      },
-      {
-        name: 'Corporate Landing Pages',
-        slug: 'corporate-landing-pages',
-        description: 'High-converting landing pages for Nigerian companies',
-        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800',
-        tags: ['Next.js', 'Framer Motion', 'TailwindCSS'],
-        liveUrl: '#',
-        details: {
-          problem: 'Nigerian companies needed professional, fast-loading landing pages that could compete with international standards while reflecting local market needs and cultural nuances.',
-          features: [
-            'Blazing-fast page loads with Next.js static generation',
-            'Smooth animations and micro-interactions with Framer Motion',
-            'Mobile-first responsive design optimized for Nigerian internet speeds',
-            'SEO optimization with meta tags and structured data',
-            'A/B testing integration for conversion optimization'
-          ],
-          challenges: [
-            'Optimizing images and assets for slow internet connections',
-            'Creating culturally relevant designs that appeal to Nigerian audiences',
-            'Implementing analytics while respecting user privacy',
-            'Balancing visual appeal with performance'
-          ],
-          role: 'Frontend Developer & Designer - Designed and developed landing pages from concept to deployment, collaborated with marketing teams on conversion strategies, and provided ongoing performance optimization.',
-          impact: 'Created 15+ landing pages with an average conversion rate improvement of 45%. Pages consistently score 95+ on Google Lighthouse performance tests.'
-        }
-      },
-    ],
-  },
+ {
+  id: 'software',
+  title: 'Software Development',
+  icon: Code,
+  description: 'Building scalable web applications and digital products',
+  image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800',
+  projects: [
+    {
+      name: 'ORBIT',
+      slug: 'orbit-platform',
+      description: 'An EdTech and career clarity platform empowering learners with guided pathways and job readiness tools.',
+      image: 'https://res.cloudinary.com/dergk96ic/image/upload/v1761996109/orbit-logo-white_ekzqm7.png',
+      tags: ['Next.js', 'TypeScript', 'TailwindCSS', 'Accessibility'],
+      liveUrl: 'https://www.getorbit.org',
+      githubUrl: '#',
+      details: {
+        problem: 'Learners in Africa struggle to navigate tech career paths due to fragmented learning resources and lack of clarity around job readiness.',
+        features: [
+          'Interactive career roadmap and guided learning paths',
+          'Responsive, accessible frontend architecture',
+          'Integration with course APIs and mentorship modules',
+          'Fast-loading pages optimized for performance and SEO',
+          'Scalable UI components built with TypeScript and TailwindCSS'
+        ],
+        challenges: [
+          'Maintaining accessibility across multiple breakpoints',
+          'Ensuring consistent UX during content-heavy page loads',
+          'Designing modular components for future scalability'
+        ],
+        role: 'Frontend Developer - Built responsive UIs, implemented design system, and ensured WCAG-compliant accessibility using Next.js and TypeScript.',
+        impact: 'Enabled 2,000+ learners to access structured career resources, improving learning outcomes and job readiness among users across Nigeria.'
+      }
+    },
+    {
+      name: 'DAWB ',
+      slug: 'dawb-platform',
+      description: 'A live-learning EdTech platform providing data analytics training with integrated LMS features.',
+      image: 'https://res.cloudinary.com/dergk96ic/image/upload/v1761996328/Dawb_logo_letters_v4y3fr.png',
+      tags: ['Next.js', 'TypeScript', 'Supabase', 'TailwindCSS', 'Power BI'],
+      liveUrl: 'https://www.dawblearn.org',
+      githubUrl: '#',
+      details: {
+        problem: 'IT trainees lacked a live-interactive environment for data analytics learning, mentorship, and portfolio-building in one platform.',
+        features: [
+          'Live class integration with real-time updates',
+          'Student dashboard and course progress tracking',
+          'Admin panel for managing cohorts and content',
+          'Integration with Power BI and SQL for analytics practice',
+          'Scalable Supabase backend with secure authentication'
+        ],
+        challenges: [
+          'Implementing seamless live-class scheduling and updates',
+          'Designing CI/CD pipelines for frequent deployments',
+          'Balancing scalability and cost during early growth phase'
+        ],
+        role: 'Full-Stack Developer & Program Lead - Architected and deployed the LMS platform, managed Supabase backend, led a 3-month data analytics bootcamp, and maintained CI/CD pipelines.',
+        impact: 'Trained 20+ learners in data analytics, achieving 90% course completion rate, and established DAWB as a trusted live-learning platform in Nigeria.'
+      }
+    },
+    {
+      name: 'Alaafia',
+      slug: 'alaafia-finance',
+      description: 'A fintech platform empowering Nigerian market women with microloans and financial education.',
+      image: 'https://res.cloudinary.com/dergk96ic/image/upload/v1761995598/Black_White_Minimal_Simple_Modern_Letter_A_Arts_Gallery_Logo_sx90ef.png',
+      tags: ['Next.js', 'TailwindCSS', 'Microfinance', 'UI Design'],
+      liveUrl: 'https://www.alaafiahq.com',
+      githubUrl: '#',
+      details: {
+        problem: 'Millions of nano-business owners lack access to credit and financial literacy, leaving them excluded from formal financial systems.',
+        features: [
+          'Fast-loading landing page for onboarding users',
+          'Educational resources for financial literacy',
+          'Microloan request and management dashboard (MVP)',
+          'Simple UI optimized for low-end devices and browsers'
+        ],
+        challenges: [
+          'Building and deploying under 24 hours for a product demo',
+          'Designing a clear, culturally relevant UX for local users',
+          'Optimizing for mobile-first access and low bandwidth'
+        ],
+        role: 'Full-Stack Developer - Designed and developed the web app MVP, implemented platform architecture, and handled deployment using Next.js.',
+        impact: 'Delivered a functional prototype in 24 hours, enabling the client to secure stakeholder interest and pilot financial inclusion initiatives for market women.'
+      }
+    },
+    {
+      name: 'Plus Incubation Hub (PIH)',
+      slug: 'plus-incubation-hub',
+      description: 'Official website for a tech innovation hub supporting startups and entrepreneurs.',
+      image: 'https://res.cloudinary.com/dergk96ic/image/upload/v1761996406/WhatsApp_Image_2025-03-22_at_23.52.08_raacgs.jpg',
+      tags: ['HTML', 'Bootstrap', 'JavaScript', 'Google Apps Script'],
+      liveUrl: 'https://www.plusincubationhub.com',
+      githubUrl: '#',
+      details: {
+        problem: 'The company needed a fast, professional website to highlight programs, partners, and events while automating newsletter subscriptions.',
+        features: [
+          'Responsive multi-section layout with Bootstrap 5',
+          'Automated newsletter signup integrated with Google Sheets',
+          'Event showcase and partner carousel sections',
+          'Simple CMS-like content update workflow'
+        ],
+        challenges: [
+          'Integrating Google Apps Script automation with static pages',
+          'Designing an intuitive and mobile-first layout',
+          'Meeting short contract deadlines for delivery'
+        ],
+        role: 'Contract Full-Stack Developer - Built and deployed the official site, automated subscriber workflow, and optimized assets for fast loading.',
+        impact: 'Delivered a functional site under deadline, improving engagement tracking and brand visibility for the innovation hub.'
+      }
+    },
+    {
+      name: 'Prox Aids',
+      slug: 'prox-aids-ecommerce',
+      description: 'An e-commerce VTU platform providing airtime, data, and bill payment services.',
+      image: 'https://res.cloudinary.com/dergk96ic/image/upload/v1761995897/prox_logo_hokzsu.png',
+      tags: ['Next.js', 'E-commerce', 'Business Management'],
+      liveUrl: 'https://www.prox.com.ng',
+      githubUrl: '#',
+      details: {
+        problem: 'Customers needed a reliable and simple way to purchase airtime, data, and pay bills without delays or platform errors.',
+        features: [
+          'User dashboard with transaction history',
+          'Automated payments and wallet top-up system',
+          'Secure API integrations with telecom providers',
+          'Admin tools for user management and transaction monitoring'
+        ],
+        challenges: [
+          'Maintaining 99% uptime for payment operations',
+          'Managing customer support and service reliability',
+          'Optimizing backend integrations for transaction speed'
+        ],
+        role: 'Business Manager & Full-Stack Developer - Oversaw platform operations, handled payment API integrations, managed 500+ customer accounts, and ensured platform reliability.',
+        impact: 'Increased customer retention to 85%, achieving over 500 active users and maintaining consistent transaction uptime across services.'
+      }
+    }
+  ]
+},
+
+
+
   {
     id: 'media',
     title: 'Media & Design Strategy',
