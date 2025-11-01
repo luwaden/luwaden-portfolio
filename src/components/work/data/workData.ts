@@ -154,7 +154,7 @@ export const workSections: WorkSection[] = [
         description: 'Video editing and post-production for top Nigerian brands',
         image: 'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800',
         tags: ['Video Editing', 'Motion Graphics', 'Branding'],
-        liveUrl: '#',
+        liveUrl: 'https://drive.google.com/drive/folders/1paleL4EATBBvx--HZRjvDSZ9RN2qxXpj?usp=sharing',
         details: {
           problem: 'Nigerian brands needed high-quality video content that could compete with international standards while maintaining authentic local appeal and storytelling.',
           features: [
@@ -261,16 +261,120 @@ export const workSections: WorkSection[] = [
       },
     ],
   },
+
   {
-    id: 'education',
-    title: 'Education & Community',
+  id: 'education',
+  title: 'Education',
+  icon: GraduationCap,
+  description: 'Teaching across nursery and primary schools, nurturing young learners through foundational education and digital literacy',
+  image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800',
+  projects: [
+    {
+      name: 'Ambassador Nursery & Primary School',
+      slug: 'ambassador-nursery-primary-school',
+      description: 'Taught kindergarten and nursery classes while introducing after-school learning programs for primary pupils.',
+      image: 'https://images.unsplash.com/photo-1596495577886-d920f1fb7238?w=800',
+      tags: ['Early Childhood Education', 'Lesson Design', 'Mentorship'],
+      details: {
+        problem: 'Young learners required personalized teaching to strengthen literacy and numeracy skills, while the school needed creative approaches to sustain student engagement.',
+        features: [
+          'Taught Kindergarten and Nursery 5 classes with a focus on phonics, reading comprehension, and basic numeracy',
+          'Organized after-school lessons for 25 primary pupils to reinforce classroom learning',
+          'Introduced early technology exposure through visual and interactive learning aids',
+          'Developed child-friendly learning materials for pupils with varying learning paces'
+        ],
+        challenges: [
+          'Maintaining engagement among very young learners with short attention spans',
+          'Balancing multiple class levels while ensuring quality learning experiences',
+          'Creating affordable but effective teaching aids within limited school resources'
+        ],
+        role: 'Class Teacher — Taught foundational subjects, managed lesson delivery and assessment, and provided individualized academic support to pupils.',
+        impact: 'Taught over 40 pupils across kindergarten and nursery levels, improving literacy readiness and confidence. After-school lessons led to measurable progress in Mathematics and English proficiency among primary pupils.'
+      }
+    },
+    {
+      name: 'Abied Nursery & Primary School',
+      slug: 'abied-nursery-primary-school',
+      description: 'Taught final-year primary pupils, focusing on academic excellence and computer literacy.',
+      image: 'https://images.unsplash.com/photo-1596496051296-2d1d06c2c23b?w=800',
+      tags: ['Primary Education', 'STEM', 'Exam Preparation', 'Digital Literacy'],
+      details: {
+        problem: 'Graduating pupils needed targeted academic preparation and practical technology exposure to succeed in common entrance examinations and secondary education.',
+        features: [
+          'Taught Primary 6 class of 10 pupils core subjects including Mathematics, English, and Basic Science',
+          'Prepared students for common entrance examinations with mock tests and revision programs',
+          'Introduced basic computer literacy and practical Microsoft Excel training sessions',
+          'Designed lesson notes and visual aids to improve comprehension and retention'
+        ],
+        challenges: [
+          'Bridging knowledge gaps from earlier class levels',
+          'Adapting lessons for both exam preparation and digital literacy',
+          'Limited access to computers for practical sessions'
+        ],
+        role: 'Primary 6 Class Teacher — Led academic instruction, examination preparation, and hands-on computer lessons for final-year pupils.',
+        impact: 'Improved examination readiness across all pupils, with 100% successfully gaining admission into secondary schools. Introduced 10 students to basic computer use and Microsoft Excel, enhancing digital competence at an early stage.'
+      }
+    },
+    {
+      name: 'Faith Cush Nursery & Primary School',
+      slug: 'faith-cush-nursery-primary-school',
+      description: 'Delivered engaging, personalized instruction to early primary pupils in Ibadan, Oyo State.',
+      image: 'https://images.unsplash.com/photo-1603575448762-df5b0d1ccf58?w=800',
+      tags: ['Primary Education', 'Child Development', 'Creative Learning'],
+      details: {
+        problem: 'Primary 3 pupils needed a more interactive and nurturing learning approach to sustain interest and comprehension across core subjects.',
+        features: [
+          'Taught Mathematics, English, and Science to 5 primary pupils in a personalized setting',
+          'Used play-based and storytelling approaches to simplify complex concepts',
+          'Encouraged reading culture through daily comprehension and oral presentation exercises',
+          'Monitored academic progress through weekly performance evaluations'
+        ],
+        challenges: [
+          'Small class size requiring individualized teaching plans',
+          'Maintaining consistent motivation among young pupils',
+          'Designing creative learning strategies without digital tools'
+        ],
+        role: 'Primary School Teacher — Developed and delivered interactive lesson plans tailored to learners’ individual needs.',
+        impact: 'Enhanced literacy and numeracy confidence among all 5 pupils. Parents reported noticeable improvement in reading fluency and classroom participation.'
+      }
+    },
+    {
+      name: 'Private Home Tutoring',
+      slug: 'private-home-tutoring',
+      description: 'Delivered personalized home lessons for primary and junior secondary students from three different families.',
+      image: 'https://images.unsplash.com/photo-1604881991720-f91add269bed?w=800',
+      tags: ['Home Tutoring', 'Personalized Learning', 'Assessment'],
+      details: {
+        problem: 'Parents sought additional academic support for their children outside school hours to strengthen foundational understanding and performance.',
+        features: [
+          'Provided one-on-one academic tutoring across Mathematics, English, and Basic Science',
+          'Developed personalized learning schedules for each learner',
+          'Monitored progress through weekly tests and feedback sessions',
+          'Collaborated with parents to address specific learning challenges'
+        ],
+        challenges: [
+          'Adapting teaching style to diverse home environments and learning speeds',
+          'Balancing time across multiple households',
+          'Sustaining student focus in informal learning settings'
+        ],
+        role: 'Private Tutor — Provided tailored academic guidance to six pupils from three families, ensuring steady academic growth through customized lesson plans and continuous evaluation.',
+        impact: 'Improved pupils’ grades by an average of 25% within three months of consistent tutoring. Strengthened parents’ trust in home-based learning and improved learner confidence and discipline.'
+      }
+    }
+  ]
+},
+
+
+   {
+    id: 'ngo & community',
+    title: 'NGO & Community',
     icon: GraduationCap,
     description: 'Teaching, program administration, and community building',
     image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800',
     projects: [
       {
-        name: 'Primary Education',
-        slug: 'primary-education',
+        name: 'Primary community',
+        slug: 'primary-community',
         description: 'Teaching across various primary schools in Nigeria',
         image: 'https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=800',
         tags: ['Teaching', 'Curriculum', 'Mentorship'],
@@ -286,11 +390,11 @@ export const workSections: WorkSection[] = [
           challenges: [
             'Working with limited resources and technology',
             'Managing large class sizes (40+ students)',
-            'Bridging learning gaps from inconsistent previous education',
+            'Bridging learning gaps from inconsistent previous community',
             'Engaging students with diverse learning abilities'
           ],
           role: 'Primary School Teacher - Taught mathematics, science, and basic computer skills, developed engaging lesson plans, mentored junior teachers, and organized extracurricular technology clubs.',
-          impact: 'Taught 500+ students across 5 schools, improved average test scores by 30%, and inspired 50+ students to pursue STEM education. Many former students are now in secondary school excelling in science and technology subjects.'
+          impact: 'Taught 500+ students across 5 schools, improved average test scores by 30%, and inspired 50+ students to pursue STEM community. Many former students are now in secondary school excelling in science and technology subjects.'
         }
       },
       {
@@ -320,6 +424,7 @@ export const workSections: WorkSection[] = [
       },
     ],
   },
+
   {
     id: 'certifications',
     title: 'Certifications & Credentials',
